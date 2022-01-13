@@ -1,0 +1,747 @@
+sh-3.2$ cd ex02
+sh-3.2$ pwd
+/Users/elabanca/desktop/shell00/ex02
+sh-3.2$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Session Contents Restored
+
+Last login: Wed Jan 12 22:28:46 on console
+elabanca@c2r1s6 Desktop %
+elabanca@c2r1s6 Desktop % ls -la
+total 24
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 17:57 .
+drwxr-xr-x  22 elabanca  2022_lisboa   816 Jan 12 22:28 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 12 19:14 .DS_Store
+-rw-r--r--   1 elabanca  2022_lisboa   324 Jan 10 13:43 PLAY_ME.webloc
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jan 12 17:57 sabtina
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 shell00
+elabanca@c2r1s6 Desktop % cd shell00
+elabanca@c2r1s6 shell00 % ls -la
+total 16
+drwxr-xr-x  6 elabanca  2022_lisboa   204 Jan 12 19:55 .
+drwxr-xr-x  6 elabanca  2022_lisboa   204 Jan 12 17:57 ..
+-rw-r--r--@ 1 elabanca  2022_lisboa  6148 Jan 12 19:14 .DS_Store
+drwxr-xr-x  3 elabanca  2022_lisboa   102 Jan 12 17:51 ex00
+drwxr-xr-x  4 elabanca  2022_lisboa   136 Jan 12 19:51 ex01
+drwxr-xr-x  3 elabanca  2022_lisboa   102 Jan 12 20:02 ex02
+elabanca@c2r1s6 shell00 % cd ex02
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 12 20:02 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 12 20:02 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+elabanca@c2r1s6 ex02 % touch
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+elabanca@c2r1s6 ex02 %
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 12 20:02 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+elabanca@c2r1s6 ex02 % touch test1
+elabanca@c2r1s6 ex02 % touch test2
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  5 elabanca  2022_lisboa  170 Jan 12 22:32 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test2
+elabanca@c2r1s6 ex02 % rm test2
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  4 elabanca  2022_lisboa  136 Jan 12 22:33 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+elabanca@c2r1s6 ex02 % mkdir test2
+elabanca@c2r1s6 ex02 % touch test3
+elabanca@c2r1s6 ex02 % touch test4
+elabanca@c2r1s6 ex02 %
+elabanca@c2r1s6 ex02 % touch test5
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod u+w test1
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod u+x test1
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwxr--r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod g-r test1
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx---r--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod g+x test1
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod u-w test2
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-xr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod g-r test2
+elabanca@c2r1s6 ex02 % sl -la
+zsh: command not found: sl
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x--xr-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod g-x test2
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r-x  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod o-x test2
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod u-w test3
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r--r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod g-r test3
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod u+r test4
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod o-r  test4
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r-----  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod o+x test4
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 22:34 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-rw-r--r--  1 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % chmod o-w test05
+chmod: test05: No such file or directory
+elabanca@c2r1s6 ex02 % sl -la
+zsh: command not found: sl
+elabanca@c2r1s6 ex02 % chmod u-w test05
+chmod: test05: No such file or directory
+elabanca@c2r1s6 ex02 % sl -la
+zsh: command not found: sl
+elabanca@c2r1s6 ex02 % rm test5
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  1 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+elabanca@c2r1s6 ex02 % ln test3 test5
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % man ln
+elabanca@c2r1s6 ex02 % ls -la
+total 0
+drwxr-xr-x  8 elabanca  2022_lisboa  272 Jan 12 23:29 .
+drwxr-xr-x  6 elabanca  2022_lisboa  204 Jan 12 19:55 ..
+drwxr-xr-x  2 elabanca  2022_lisboa   68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 12 20:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % ln test6 test0
+ln: test6: No such file or directory
+elabanca@c2r1s6 ex02 % ln test0 test6
+ln: test0: Is a directory
+elabanca@c2r1s6 ex02 % ls
+test0	test1	test2	test3	test4	test5
+elabanca@c2r1s6 ex02 % rmdir test0
+elabanca@c2r1s6 ex02 % ls
+test1	test2	test3	test4	test5
+elabanca@c2r1s6 ex02 % ln test6 test0
+ln: test6: No such file or directory
+elabanca@c2r1s6 ex02 % mkdir test0
+elabanca@c2r1s6 ex02 % ln test0 test6
+ln: test0: Is a directory
+elabanca@c2r1s6 ex02 % ln test6 test0
+ln: test6: No such file or directory
+elabanca@c2r1s6 ex02 % touch test6
+elabanca@c2r1s6 ex02 % ln test6 test0
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 13 00:00 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+-rw-r--r--  2 elabanca  2022_lisboa    0 Jan 12 23:59 test6
+elabanca@c2r1s6 ex02 % rmdir test0
+rmdir: test0: Directory not empty
+elabanca@c2r1s6 ex02 % rm test6
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 13 00:00 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % rmdir test0
+rmdir: test0: Directory not empty
+elabanca@c2r1s6 ex02 % mkdir test0
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:01 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+elabanca@c2r1s6 ex02 % touch test6
+elabanca@c2r1s6 ex02 % ln test0 test6
+ln: test0: Is a directory
+elabanca@c2r1s6 ex02 % ln test6 test0
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 13 00:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+-rw-r--r--  2 elabanca  2022_lisboa    0 Jan 13 00:02 test6
+elabanca@c2r1s6 ex02 % cd test0
+elabanca@c2r1s6 test0 % rm test6
+elabanca@c2r1s6 test0 % cd..
+zsh: command not found: cd..
+elabanca@c2r1s6 test0 % clear
+elabanca@c2r1s6 test0 % ls -l
+elabanca@c2r1s6 test0 % cd ..
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:02 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+-rw-r--r--  1 elabanca  2022_lisboa   0 Jan 13 00:02 test6
+elabanca@c2r1s6 ex02 % ln test6 test0
+elabanca@c2r1s6 ex02 % ls -l
+total 0
+drwxr-xr-x  3 elabanca  2022_lisboa  102 Jan 13 00:03 test0
+-rwx--xr--  1 elabanca  2022_lisboa    0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa   68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa    0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa    0 Jan 12 22:34 test5
+-rw-r--r--  2 elabanca  2022_lisboa    0 Jan 13 00:02 test6
+elabanca@c2r1s6 ex02 % ls
+test0	test1	test2	test3	test4	test5	test6
+elabanca@c2r1s6 ex02 % rm test6
+elabanca@c2r1s6 ex02 % rm test0
+rm: test0: is a directory
+elabanca@c2r1s6 ex02 % rmdir test0
+rmdir: test0: Directory not empty
+elabanca@c2r1s6 ex02 % cd test0
+elabanca@c2r1s6 test0 % rm test6
+elabanca@c2r1s6 test0 % cd ..
+elabanca@c2r1s6 ex02 % ln -l test0 test6
+ln: illegal option -- l
+usage: ln [-Ffhinsv] source_file [target_file]
+       ln [-Ffhinsv] source_file ... target_dir
+       link source_file target_file
+elabanca@c2r1s6 ex02 % ln -s test0 test6
+elabanca@c2r1s6 ex02 % ls -l
+total 8
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxr-xr-x  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % clear
+elabanca@c2r1s6 ex02 % ls -l
+total 8
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxr-xr-x  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % chmod 714 test1
+elabanca@c2r1s6 ex02 % ls -l
+total 8
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxr-xr-x  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % clear
+123a
+12a
+
+elabanca@c2r1s6 ex02 % chmod 404 test3
+elabanca@c2r1s6 ex02 % ls -l
+total 8
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+1
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxr-xr-x  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % man chmod
+elabanca@c2r1s6 ex02 % chmod -h 777 test
+chmod: test: No such file or directory
+elabanca@c2r1s6 ex02 % chmod -h 777 test6
+
+elabanca@c2r1s6 ex02 % ls -la
+total 24
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:05 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 13 00:05 .DS_Store
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jan 13 00:05 test0
+-rwx--xr--   1 elabanca  2022_lisboa     0 Jan 12 22:32 test1
+dr-x---r--   2 elabanca  2022_lisboa    68 Jan 12 22:33 test2
+-r-----r--   2 elabanca  2022_lisboa     0 Jan 12 22:34 test3
+-rw-r----x   1 elabanca  2022_lisboa     0 Jan 12 22:34 test4
+1
+-r-----r--   2 elabanca  2022_lisboa     0 Jan 12 22:34 test5
+lrwxrwxrwx   1 elabanca  2022_lisboa     5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % ls -l
+total 8
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   0 Jan 12 22:32 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % cat test1
+elabanca@c2r1s6 ex02 % ls -la
+total 24
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:05 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 13 00:05 .DS_Store
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jan 13 00:05 test0
+-rwx--xr--   1 elabanca  2022_lisboa     0 Jan 12 22:32 test1
+dr-x---r--   2 elabanca  2022_lisboa    68 Jan 12 22:33 test2
+-r-----r--   2 elabanca  2022_lisboa     0 Jan 12 22:34 test3
+-rw-r----x   1 elabanca  2022_lisboa     0 Jan 12 22:34 test4
+-r-----r--   2 elabanca  2022_lisboa     0 Jan 12 22:34 test5
+lrwxrwxrwx   1 elabanca  2022_lisboa     5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test1
+elabanca@c2r1s6 ex02 % ls -l
+total 16
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   5 Jan 13 00:20 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test1
+elabanca@c2r1s6 ex02 % ls -l
+total 16
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jan 13 00:21 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 12 22:34 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test3
+elabanca@c2r1s6 ex02 % ls -l
+total 16
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jan 13 00:21 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 13 00:22 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   0 Jan 13 00:22 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test3
+elabanca@c2r1s6 ex02 % ls -l
+total 32
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jan 13 00:21 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   2 Jan 13 00:24 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   2 Jan 13 00:24 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test3
+elabanca@c2r1s6 ex02 % ls -l
+total 32
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jan 13 00:21 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test3
+-rw-r----x  1 elabanca  2022_lisboa   0 Jan 12 22:34 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % vi test4
+elabanca@c2r1s6 ex02 % ls -la
+total 56
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:26 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 13 00:05 .DS_Store
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jan 13 00:05 test0
+-rwx--xr--   1 elabanca  2022_lisboa     4 Jan 13 00:21 test1
+dr-x---r--   2 elabanca  2022_lisboa    68 Jan 12 22:33 test2
+-r-----r--   2 elabanca  2022_lisboa     1 Jan 13 00:25 test3
+-rw-r----x   1 elabanca  2022_lisboa     2 Jan 13 00:26 test4
+-r-----r--   2 elabanca  2022_lisboa     1 Jan 13 00:25 test5
+lrwxrwxrwx   1 elabanca  2022_lisboa     5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 202206012047 test1
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jan 12 22:33 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jan 13 00:26 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 202206012245 test2
+elabanca@c2r1s6 ex02 % ls -la
+total 56
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:26 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 13 00:05 .DS_Store
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jan 13 00:05 test0
+-rwx--xr--   1 elabanca  2022_lisboa     4 Jun  1  2022 test1
+dr-x---r--   2 elabanca  2022_lisboa    68 Jun  1  2022 test2
+-r-----r--   2 elabanca  2022_lisboa     1 Jan 13 00:25 test3
+-rw-r----x   1 elabanca  2022_lisboa     2 Jan 13 00:26 test4
+-r-----r--   2 elabanca  2022_lisboa     1 Jan 13 00:25 test5
+lrwxrwxrwx   1 elabanca  2022_lisboa     5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 20220601
+elabanca@c2r1s6 ex02 % man touch
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jan 13 00:26 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jan 13 00:25 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 202206012344 test3
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jan 13 00:26 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 202206012343 test4
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jan 13 00:05 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -th 202206012220 test6
+touch: out of range or illegal time specification: [[CC]YY]MMDDhhmm[.SS]
+elabanca@c2r1s6 ex02 % touch -ht 202206012220 test6
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jan 13 00:05 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jun  1  2022 test6 -> test0
+elabanca@c2r1s6 ex02 % touch -t 202206012047 test0
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jun  1  2022 test6 -> test0
+elabanca@c2r1s6 ex02 % ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jun  1  2022 test6 -> test0
+elabanca@c2r1s6 ex02 %
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Session Contents Restored
+
+Last login: Thu Jan 13 03:25:36 on console
+elabanca@c2r1s6 ex02 % q
+elabanca@c2r1s6 ex02 % pwd
+/Users/elabanca/Desktop/shell00/ex02
+elabanca@c2r1s6 ex02 % cd ..
+elabanca@c2r1s6 shell00 % sh
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 17:57 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  8196 Jan 13 03:25 .DS_Store
+drwxr-xr-x   3 elabanca  2022_lisboa   102 Jan 12 17:51 ex00
+drwxr-xr-x   4 elabanca  2022_lisboa   136 Jan 12 19:51 ex01
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:26 ex02
+sh-3.2$ cd ex02
+sh-3.2$ ls -la
+total 56
+drwxr-xr-x  10 elabanca  2022_lisboa   340 Jan 13 00:26 .
+drwxr-xr-x   6 elabanca  2022_lisboa   204 Jan 12 19:55 ..
+-rw-r--r--@  1 elabanca  2022_lisboa  6148 Jan 13 00:05 .DS_Store
+drwxr-xr-x   2 elabanca  2022_lisboa    68 Jun  1  2022 test0
+-rwx--xr--   1 elabanca  2022_lisboa     4 Jun  1  2022 test1
+dr-x---r--   2 elabanca  2022_lisboa    68 Jun  1  2022 test2
+-r-----r--   2 elabanca  2022_lisboa     1 Jun  1  2022 test3
+-rw-r----x   1 elabanca  2022_lisboa     2 Jun  1  2022 test4
+-r-----r--   2 elabanca  2022_lisboa     1 Jun  1  2022 test5
+lrwxrwxrwx   1 elabanca  2022_lisboa     5 Jun  1  2022 test6 -> test0
+sh-3.2$ ls -l
+total 40
+drwxr-xr-x  2 elabanca  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jun  1  2022 test6 -> test0
+sh-3.2$ chmod g-r test0
+sh-3.2$ ls -l
+total 40
+drwx--xr-x  2 elabanca  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 elabanca  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 elabanca  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 elabanca  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 elabanca  2022_lisboa   1 Jun  1  2022 test5
+lrwxrwxrwx  1 elabanca  2022_lisboa   5 Jun  1  2022 test6 -> test0
+sh-3.2$
